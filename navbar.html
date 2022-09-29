@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navbar</title>
     <style>
         #social_logo img{
             height: 40px;
         }
 
         #nav{
-            border: 4px solid hotpink;
+            border: 0px solid hotpink;
             background-color: #2BB673;
             
             display: flex;
             justify-content: space-around;
+            height: 40px;
+            align-items: center;
         }
         #nav a{
             color:#FFFFFF;
@@ -35,7 +37,11 @@
             height: 20px;
         }
 
-       
+       #login{
+        border: 0px solid red;
+        align-items: center;
+        margin: 20px 20px;
+       }
        
        
     </style>
@@ -52,12 +58,14 @@
             <a href="https://twitter.com/KindMeal"><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></a>
         </div>
 
-            <div>
+            <div id="login">
                 <h5 style="display:inline;margin-top: 500px;">Login</h5>
-                <button onclick="">Facebook</button>
-                <button>Email</button>
+                
+                
+                <a href="https://www.facebook.com/v2.9/dialog/oauth?client_id=292733157519852&redirect_uri=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook&state=a5fb8ab2224dd1000010aae269d8fac2&display=popup&scope=email,user_birthday,user_location"><button style=" font-weight: bold ;border: none;border-radius: 5px;color:#FFFFFF;background-color: #35619f;height: 25px;width: 100px;" onclick="">Facebook</button></a>
+                <a href="./login.html"><button style=" font-weight: bold ;border: none;border-radius: 5px;color:#FFFFFF;background-color: #666666;height: 25px;width: 100px;">Email</button></a>
                 <div style="display:inline" class="st_line"></div>
-                <h5 style="display: inline">Sign Up</h5>
+                <a href="./signup.html"><h5 style="display: inline">Sign Up</h5></a>
            
 
             </div>
