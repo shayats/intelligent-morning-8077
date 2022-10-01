@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deals_1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #social_logo img{
+            height: 40px;
+        }
+
+        #nav{
+            border: 0px solid hotpink;
+            background-color: #2BB673;
+            
+            display: flex;
+            justify-content: space-around;
+            height: 40px;
+            align-items: center;
+        }
+        #nav a{
+            color:#FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            
+        }
+
+        #nav_container{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .st_line{
+            border-right: 2px solid grey;
+            height: 20px;
+        }
+
+       #login{
+        border: 0px solid red;
+        align-items: center;
+        margin: 20px 20px;
+       }
+
+       #templ_container{
+        width: 80%;
+        margin: auto;
+        border: 5px solid palegreen;
+
+       }
+
+
+       #box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,500px);
+            gap: 20px;
+            border: 5px solid red;
+            /* width: 100%; */
+            margin: auto;
+       }
+
+       #box > div{
+            border: 3px solid blue;
+            border-radius: 5px;
+            /* font-size: 15px; */
+            /* font-weight: bold; */
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+       
+#box button{
+    border: none;
+    background-color: #f53838;
+    color: #ffffff;
+    font-size: large;
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+       
+       
+       
+    </style>
+</head>
+<body>
+    <div id="nav_container">
+        <div>
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        </div>
+    
+        <div id="social_logo">
+            <a href="https://www.kindmeal.my/widget.htm"><img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></a>
+            <a href="https://www.facebook.com/KindMeal.my"><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></a>
+            <a href="https://twitter.com/KindMeal"><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></a>
+        </div>
+
+            <div id="login">
+                <h5 style="display:inline;margin-top: 500px;">Login</h5>
+                
+                
+                <a href="https://www.facebook.com/v2.9/dialog/oauth?client_id=292733157519852&redirect_uri=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook&state=a5fb8ab2224dd1000010aae269d8fac2&display=popup&scope=email,user_birthday,user_location"><button style=" font-weight: bold ;border: none;border-radius: 5px;color:#FFFFFF;background-color: #35619f;height: 25px;width: 100px;" onclick="">Facebook</button></a>
+                <a href="./login.html"><button style=" font-weight: bold ;border: none;border-radius: 5px;color:#FFFFFF;background-color: #666666;height: 25px;width: 100px;">Email</button></a>
+                <div style="display:inline" class="st_line"></div>
+                <a href="./signup.html"><h5 style="display: inline">Sign Up</h5></a>
+           
+
+            </div>
+            
+    
+
+    </div>
+    
+    <div id="nav">
+        <a href="https://www.kindmeal.my/">Home</a>
+        <a href="">Meal Deals</a>
+        <a href="">KindMoments</a>
+        <a href="">Hot Picks</a>
+        <a href="">Recipes</a>
+        <a href="">Directory</a>
+        <a href="">Articles</a>
+        <a href="">Help</a>
+    </div>
+    
+        <div id="templ_container">
+
+
+
+
+            <div id="heading">
+                <h2> Meat-Free Deals   |   Restaurants In Malaysia </h2>
+               
+                <p> Browse delicious meat-free, vegetarian deals from top restaurants and cafes! 
+                    Just click on "Get Free Coupon" to obtain instant discounts and dine at the restaurants. <br>
+                     No upfront payment, booking or printing is needed. If you share it on social media,
+                      you'll even DOUBLE your discount!
+                </p>
+        
+                <p>
+                    Download our mobile app now to easily get coupons and start dining in a few seconds. 
+                    Effortlessly save lives, health, environment and money now!
+                </p>
+            </div> 
+               
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <select>
+                        <option>All Categories</option>
+                        <option>Pasta</option>
+                        <option>Burger</option>
+                        <option>Breakfast</option>
+                        <option>Salad</option>
+                        <option>Bakery</option>
+                        <option>Salad</option>
+                        <option>Tea & Desert</option>
+                        <option>Local Delights</option>
+                        <option>Jap & Korean</option>
+                        <option>Chinese</option>
+                        <option>Indian</option>
+                        <option>Soup</option>
+                        <option>Cute</option>
+                    
+                </select>
+
+                <select>
+                    <option>All Locations</option>
+                    <option>Klang Valley</option>
+                    <option>Kuala Lumpur</option>
+                    <option>Petaling Jaya</option>
+                    <option>Ampang</option>
+                    <option>Bangsar</option>
+                    <option>Bangsar South</option>
+                    <option>Banting</option>
+                    <option>Bukit Bintang</option>
+                    <option>Bukit Damansara</option>
+                    <option>Cheras</option>
+                    <option>Damansara Heights</option>
+                    <option>Danmansara Utama</option>
+                
+            </select>
+                  <button type="submit">Search Deals</button>
+                  <button formaction="https://www.kindmeal.my/restaurants.htm">Browse Restaurants </button>
+                </form>
+
+                
+              </div><br>
+
+
+        <div id="deals_img">
+            <img src="https://www.kindmeal.my/images/ads/banner_ekoeko-1100x280.jpg" alt="">
+        </div><br>
+            
+            
+            <!-- 
+        <div id="paging">
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+
+              <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+
+
+        </div> -->
+
+
+        <div id="box">
+
+            <div>
+                <div style="border: 5px solid yellow">
+                    <img style="width: 480px;" src="https://www.kindmeal.my/photos/deal/7/724-5208-l.jpg" alt="">
+                </div>
+                
+                <div style="border: 5px solid yellow">
+                    <h3>BINGS-1</h3>
+                    <p>Banting, Selangor</p>
+                    <p>Indulge in our perfectly decadent desserts of Bingsu, toasts, waffles and homemade pastries, and complement them with quality Arab.</p>
+                    <button>Get Free Coupon</button>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                
+                </div>
+                
+            </div>
+                
+            
+
+
+            <div>
+                <div style="border: 5px solid yellow;">
+                
+                    <img style="width: 480px;" src="https://www.kindmeal.my/photos/deal/7/716-5042-l.jpg" alt="">
+                </div>
+                    
+                <div style="border: 5px solid yellow">
+                        <h3>BINGS-2</h3>
+                        <p>Banting, Selangor</p>
+                        <p>Indulge in our perfectly decadent desserts of Bingsu, toasts, waffles and homemade pastries, and complement them with quality Arab.</p>
+                        <button>Get Free Coupon</button>
+        
+                    </div>
+                
+            </div>
+            
+            
+            <div>
+                <div style="border: 5px solid yellow;">
+                
+                    <img style="width: 480px;" src="https://www.kindmeal.my/photos/deal/7/716-5042-l.jpg" alt="">
+                </div>
+                    
+                <div style="border: 5px solid yellow">
+                        <h3>BINGS-2</h3>
+                        <p>Banting, Selangor</p>
+                        <p>Indulge in our perfectly decadent desserts of Bingsu, toasts, waffles and homemade pastries, and complement them with quality Arab.</p>
+                        <button>Get Free Coupon</button>
+        
+                    </div>
+                
+            </div>
+
+            
+            <div>
+                <div style="border: 5px solid yellow;">
+                
+                    <img style="width: 480px;" src="https://www.kindmeal.my/photos/deal/7/716-5042-l.jpg" alt="">
+                </div>
+                    
+                <div style="border: 5px solid yellow">
+                        <h3>BINGS-2</h3>
+                        <p>Banting, Selangor</p>
+                        <p>Indulge in our perfectly decadent desserts of Bingsu, toasts, waffles and homemade pastries, and complement them with quality Arab.</p>
+                        <button>Get Free Coupon</button>
+        
+                    </div>
+                
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+
+       
+    
+</body>
+</html>
