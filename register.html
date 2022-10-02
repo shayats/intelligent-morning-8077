@@ -54,6 +54,10 @@
             text-decoration:none;
             font-size: small;
         }
+
+        #join_button:hover{
+            background-color: #bb0707;
+        }
     </style>
 </head>
 <body>
@@ -145,20 +149,9 @@
 
         <p><input id="terms" type="checkbox" onclick="agree()" name="terms" value="on" /> I agree to KindMeal.my Terms & Conditions</p><br><br>
         <div class="Reg_button">
-            <button>Join Now</button><br>
+            <button id="join_button">Join Now</button><br>
         </div><br><br>
         
-
-
-
-
-
-            
-
-            
-
-            
-
           
         </form>
 
@@ -292,4 +285,48 @@ function agree() {
 			//return false;
 			}
 	}
+
+
+
+
+    let submit_btn = document.querySelector("button");
+    submit_btn.addEventListener("click", SUbmit_Func);
+
+    function SUbmit_Func(){
+        let input_tags=document.querySelectorAll("input");
+       
+        let Fname_details=input_tags[0].value;
+        let Lname_details=input_tags[1].value;
+        let email_details=input_tags[2].value;
+        let Re_email_details=input_tags[3].value;
+        let Uname_details=input_tags[4].value;
+        let password=input_tags[5].value;
+        let DOB_details=input_tags[6].value;
+        let country_details=input_tags[7].value;
+        let state_details=input_tags[8].value;
+        let gender_details=input_tags[9].value;
+
+        // console.log(email_details,password,phone_number);
+
+
+        let obj={
+            Fname_details,
+            Lname_details,
+            email_details,
+            Re_email_details,
+            Uname_details,
+            password,
+            DOB_details,
+            country_details,
+            state_details,
+            gender_details,
+
+        };
+        // console.log(obj);
+
+        localStorage.setItem("signup_details",JSON.stringify(obj));
+        alert("Successfully Signup");
+        window.location.href="login.html"
+      
+    }
 </script>
