@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        #social_logo img{
+            height: 40px;
+        }
+
+       
+        #navbar_cont_1{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+
+        .st_line{
+            border-right: 2px solid grey;
+            height: 20px;
+        }
+
+       #login{
+        border: 0px solid red;
+        align-items: center;
+        margin: 20px 20px;
+       }
+
+       #nav{
+            border: 0px solid hotpink;
+            background-color: #2BB673;
+            
+            display: flex;
+            justify-content: space-around;
+            height: 40px;
+            align-items: center;
+        }
+        #nav a{
+            color:#FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            
+        }
+
+       
+
+
+        /* now for slider-CSS */
+
+
+        
+        
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mySlides{
+    display: none;
+    display: flex;
+    border: 0px solid red;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mySlides img{
+    vertical-align: middle;
+    
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+/*--------------------------------- now for template------------------------------------------------------- */
+
+#template_container{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fcfcfc;
+            margin-top: 80px;
+        }
+        .box1,.box2,.box3,.box4{
+            border: 0px solid greenyellow;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            margin: 15px 0px;
+        }
+        
+        .box1 img,.box2 img,.box3 img,.box4 img{
+            height: 200px;
+            width: 230px;
+        }
+        .box1_word a,.box2_word a,.box3_word a,.box4_word a{
+            text-decoration: none;
+            font-weight: bold;
+             margin: 0px 30px; 
+             /* margin-left: 300px; */
+             color: #2193ff;
+        }
+
+        .box1_word a:hover,.box2_word a:hover,.box3_word a:hover,.box4_word a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+             margin: 0px 30px; 
+             /* margin-left: 300px; */
+             color: #2193ff;
+        }
+
+        .un_box_1,.un_box_2,.un_box_3,.un_box_4{
+            border: 0px solid red;
+            display: flex;
+            margin: auto;
+            gap: 20px;
+            
+        }
+        .un_box11,.un_box21,.un_box31,.un_box41,.un_box12,.un_box22,.un_box32,.un_box42,.un_box13,.un_box23,.un_box33,.un_box43,.un_box14,.un_box24,.un_box34,.un_box44{
+            border: 0px solid rebeccapurple;
+            /* width: auto; */
+            border-radius: 10px;
+            
+
+        }
+        .un_box11 a,.un_box21 a,.un_box31 a,.un_box41 a,.un_box12 a,.un_box22 a,.un_box32 a,.un_box42 a,.un_box13 a,.un_box23 a,.un_box33 a,.un_box43 a,.un_box14 a,.un_box24 a,.un_box34 a,.un_box44 a{
+            text-decoration: none;
+            color: #888888;
+            font-size: 12px;
+            font-weight: 400;
+            /* text-align: center; */
+            
+        }
+        .un_box11 a:hover,.un_box21 a:hover,.un_box31 a:hover,.un_box41 a:hover,.un_box12 a:hover,.un_box22 a:hover,.un_box32 a:hover,.un_box42 a:hover,.un_box13 a:hover,.un_box23 a:hover,.un_box33 a:hover,.un_box43 a:hover,.un_box14 a:hover,.un_box24 a:hover,.un_box34 a:hover,.un_box44 a:hover{
+            text-decoration: underline;
+        }
+       
+        #templ_cont{
+            width: 80%;
+            margin: auto;
+            border: 0px solid red;
+        }
+
+
+
+        /* --------------------now for Footer-------------------------------------------------------- */
+
+
+         
+        #boxes{
+            display: flex;
+            
+            border: 0px solid green;
+            
+        }
+        .box_1,.box_2,.box_3,.box_4 {
+            border: 1px solid grey;
+            width: 22%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        #footer_container_1{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            
+        }
+
+        
+        #footer_container_1 button{ 
+        font-weight: bold;
+        font-size: 36px;
+        border-radius: 10px;
+        border: none ;
+        color: #FFFFFF;
+        background-color: #f53838;
+        padding: 20px 20px;
+        }
+
+        #footer_container_1 button:hover{
+            background-color: #831212;
+         }
+
+        #footer_img{
+            
+            text-align: center;
+            border: 0px solid orangered;
+        }
+
+        #footer{
+            background-color: #2bb673;
+            border: 0px solid gold;
+            height: 400px;
+            display: flex;
+            padding: 20px 40px;
+        }
+
+        #footer ul{
+        list-style: none; 
+        
+        
+        }
+
+        #footer a{
+            color: #FFFFFF;
+            text-decoration:none;
+            font-size: small;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+
+
+<div id="navbar_container">
+
+
+
+
+
+    <div id="navbar_cont_1">
+        <div>
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        </div>
+    
+        <div id="social_logo">
+            <a href="https://www.kindmeal.my/widget.htm"><img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></a>
+            <a href="https://www.facebook.com/KindMeal.my"><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></a>
+            <a href="https://twitter.com/KindMeal"><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></a>
+        </div>
+
+            <div id="login">
+                <h5 style="display:inline;margin-top: 500px;">Login</h5>
+                
+                
+                <a href="https://www.facebook.com/v2.9/dialog/oauth?client_id=292733157519852&redirect_uri=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook&state=a5fb8ab2224dd1000010aae269d8fac2&display=popup&scope=email,user_birthday,user_location"><button style=" font-weight: bold ;border: none;border-radius: 5px;color:#FFFFFF;background-color: #35619f;height: 25px;width: 100px;" onclick="">Facebook</button></a>
+                <a href="./login.html"><button style=" font-weight: bold ;border: none;border-radius: 5px;color:#FFFFFF;background-color: #666666;height: 25px;width: 100px;">Email</button></a>
+                <div style="display:inline" class="st_line"></div>
+                <a href="./signup.html"><h5 style="display: inline">Sign Up</h5></a>
+                
+           
+
+            </div>
+            
+    
+
+    </div>
+    
+    <div id="nav">
+        <a href="./navbar.html">Home</a>
+        <a href="./deals_1.html">Meal Deals</a>
+        <a href="https://www.kindmeal.my/moments.htm">KindMoments</a>
+        <a href="https://www.kindmeal.my/hotpicks.htm">Hot Picks</a>
+        <a href="https://www.kindmeal.my/recipes.htm">Recipes</a>
+        <a href="https://www.kindmeal.my/vegetarian_directory.htm">Directory</a>
+        <a href="https://www.kindmeal.my/articles/">Articles</a>
+        <a href="https://www.kindmeal.my/help.htm">Help</a>
+    </div>
+    
+
+
+
+
+
+
+</div>
+   
+
+
+
+
+<div id="slide_container">
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img style="display: inline;border: 1px solid red;" src="https://www.kindmeal.my/photos/deal/7/708-4923-m.jpg" style="width:70%">
+          <img src="https://www.kindmeal.my/photos/shop/4/443-2874-m.jpg" style="width: 30%;">
+          <div style="font-size: 24px;border: 1px solid red;background-color:#142107;height:50px;opacity: 0.5" class="text">Nature Dining, 10%-camp forest</div>
+        </div>
+        
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img style="display: inline;" src="https://www.kindmeal.my/photos/deal/7/724-5208-m.jpg" style="width:70%">
+          <img src="https://www.kindmeal.my/photos/shop/5/505-4609-m.jpg" style="width: 30%;">
+          <div style="font-size: 24px;background-color:#142107;height:50px;opacity: 0.5"  class="text">Bingsu and Desserts 10% OFF-Bings</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img style="display: inline;" src="https://www.kindmeal.my/photos/deal/6/686-4475-m.jpg" style="width:70%">
+          <img src="https://www.kindmeal.my/photos/shop/5/562-4188-m.jpg" style="width: 30%;">
+          <div style="font-size: 24px;background-color:#142107;height:50px;opacity: 0.5"  class="text">Blend of Asian Flavours-15% OFF - Figure out Cafe</div>
+        </div>
+        
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img style="display: inline;" src="https://www.kindmeal.my/photos/deal/6/644-3810-m.jpg" style="width:70%">
+            <img src="https://www.kindmeal.my/photos/shop/6/626-4816-m.jpg" style="width: 30%;">
+            <div style="font-size: 24px;background-color:#142107;height:50px;opacity: 0.5"  class="text">Exquisiye Thai Flavours 15% OFF -VegeThai</div>
+          </div>
+        
+        
+          
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img style="display: inline;" src="https://www.kindmeal.my/photos/deal/3/369-3697-m.jpg" style="width:70%">
+            <img src="https://www.kindmeal.my/photos/shop/3/396-2514-m.jpg" style="width: 30%;">
+            <div style="font-size: 24px;background-color:#142107;height:50px;opacity: 0.5"  class="text">WholeSome Western Experience 20% OFF- Piccolo Cafe</div>
+          </div>
+        
+        
+          
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img style="display: inline;" src="https://www.kindmeal.my/photos/deal/7/716-5042-m.jpg" style="width:70%">
+            <img src="https://www.kindmeal.my/photos/shop/6/611-4692-m.jpg" style="width: 30%;">
+            <div style="font-size: 24px;background-color:#142107;height:50px;opacity: 0.5"  class="text">Waffles and Snacks 25% OFF - Chequers</div>
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        
+
+
+
+</div>
+
+
+
+
+
+
+
+<div id="template_container">
+
+
+
+
+    
+<div id="templ_cont">
+    
+    <div class="box1" >
+        <div class="box1_word">
+            <h3 style="display: inline;color: #928f8f;">Latest News and Videos</h3>
+            <a href="https://www.kindmeal.my/widget.htm">Save Lives with Your Blog</a>
+            <a href="https://www.kindmeal.my/articles/">News & Articles</a>
+            <a href="https://www.facebook.com/KindMeal.my">Follow our Facebook</a>
+    
+        </div>
+
+        <div class="un_box_1">
+
+           <div class="un_box11" >
+                <div>
+                    <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t39.30808-6/307583882_5740056329387938_8686180043837495004_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&ccb=1-7&_nc_sid=8024bb&_nc_ohc=EpA93b8Qy7sAX-i9ff4&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AT8BN50NAJKEGUEDMU7YrJ_d8RlU9YQ2vjcSmZDR1dNVgg&oe=633A00FC" alt="">
+                </div>
+                <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+           
+           <div class="un_box21" >
+            <div>
+                <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/302450409_1447446119095671_650723446000958095_n.jpg?stp=dst-jpg_s720x720&_nc_cat=111&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=ksp6O1xUXLIAX-JRuNS&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AT_YjIg6GLP99RntFqoNhAakGcKMveUZ_Vbs96I0zaq3hg&oe=63397C80" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+
+           
+           <div class="un_box31" >
+            <div>
+                <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/304779427_454113786736771_1344955773046935629_n.jpg?stp=dst-jpg_s720x720&_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=IIpGL-F38DYAX9XgIEC&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AT9f5z2KCcTf5KQCrREW8oGIYeYlMOOMy8m9_czOVkoy-A&oe=633ADE6D" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+            </div> 
+
+
+            
+           <div class="un_box41" >
+            <div>
+                <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/74671980_573691586712442_6808626047337103360_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=PQqO7lMlEmMAX9vFzOm&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AT9qAr0SUfIZopMak2hR9kwAhVbzILhErGSrFCHCEwAS7Q&oe=633A48D7" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+        </div>
+        
+
+
+    </div><br>
+
+    
+    <div class="box2" >
+        <div class="box2_word">
+            <h3 style="display: inline;color: #928f8f;">Yummylicious Moments</h3>
+            <a href="https://www.kindmeal.my/widget.htm">Secret Recipes</a>
+            <a href="https://www.kindmeal.my/articles/"> Member Hot Picks</a>
+            <a href="https://www.facebook.com/KindMeal.my"> Photo Moments</a>
+    
+        </div>
+
+        <div class="un_box_2">
+
+           <div class="un_box12" >
+                <div>
+                    <img src="https://www.kindmeal.my/photos/moment/24/24454-47170-s.jpg" alt="">
+                </div>
+                <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+           
+           <div class="un_box22" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24451-47163-s.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+
+           
+           <div class="un_box32" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24446-47144-s.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+            </div> 
+
+
+            
+           <div class="un_box42" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24440-47121-s.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+        </div>
+        
+
+
+    </div><br>
+
+
+    
+    <div class="box3" >
+        <div class="box3_word">
+            <h3 style="display: inline;color: #928f8f;">Discover Restaurants</h3>
+            <a href="https://www.kindmeal.my/widget.htm">Vegetarian Directory</a>
+            <a href="https://www.kindmeal.my/articles/"> Restaurant Menu</a>
+            <a href="https://www.facebook.com/KindMeal.my"> Food Map</a>
+    
+        </div>
+
+        <div class="un_box_3">
+
+           <div class="un_box13" >
+                <div>
+                    <img src="https://www.kindmeal.my/photos/item/0/194-1950-s.jpg" alt="">
+                </div>
+                <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+           
+           <div class="un_box23" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/item/0/528-6826-s.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+
+           
+           <div class="un_box33" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/item/0/152-1576-s.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+            </div> 
+
+
+            
+           <div class="un_box43" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/item/0/287-2977-s.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">Indulge In Bings Banting''s Decadent Desserts Of Bingsu, Cub..</a>
+           </div> 
+
+        </div>
+        
+
+
+    </div><br>
+
+
+    
+    <div class="box4" >
+        <div class="box4_word">
+            <h3 style="display: inline;color: #928f8f;">Amazing Superheroes</h3>
+            <a href="https://www.kindmeal.my/widget.htm">Latest Buzz</a>
+            <a href="https://www.kindmeal.my/articles/"> Lifestyle Ambassadors</a>
+            <a href="https://www.facebook.com/KindMeal.my"> Win Gifts!</a>
+    
+        </div>
+
+        <div class="un_box_4">
+
+           <div class="un_box14" >
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/41/41661-m.jpg" alt="">
+                </div>
+                <a href="https://www.kindmeal.my/articles/post-20129.htm">McRobertChong</a>
+           </div> 
+
+           
+           <div class="un_box24" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/member/23/23401-m.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">SheauYanYong</a>
+           </div> 
+
+
+           
+           <div class="un_box34" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/member/41/41590-m.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">FoodLover431</a>
+            </div> 
+
+
+            
+           <div class="un_box44" >
+            <div>
+                <img src="https://www.kindmeal.my/photos/member/20/20907-m.jpg" alt="">
+            </div>
+            <a href="https://www.kindmeal.my/articles/post-20129.htm">ChrisYap1</a>
+           </div> 
+
+        </div>
+        
+
+
+    </div><br>
+
+</div>
+
+
+
+<div id="footer_container">
+
+
+
+    <div id="footer_container_1">
+        <h3>Introducing Malaysia's Pioneering Meat-Free Lifestyle Platform</h3>
+        <p>Brought to you by <img style="width: 200px;" src="https://www.kindmeal.my/images/logo-petfinder-v2.png"></p><br>
+        <h3>Instant coupon & dining. No upfront coupon payment, booking or printing.</h3>
+    
+        <div id="boxes">
+            <div class="box_1">
+                <div> <img style="width:200px" src="https://www.kindmeal.my/images/intro_deal.png"></div>
+                <h3>Get Great Deals</h3>
+                <p>Show our FREE digital coupons to instantly enjoy exciting deals</p>
+            </div>
+            <div class="box_2">
+                <div> <img style="width: 200px;" src="https://www.kindmeal.my/images/intro_kindmoment.png"></div>
+                <h3>SHARE kindMoments</h3>
+                <p>Spread the joy by sharing your yummy dining moments</p>
+            </div>
+            <div class="box_3">
+                <div> <img style="width:200px" src="https://www.kindmeal.my/images/intro_menu.png"></div>
+                <h3>Discover Delicious Foods</h3>
+                <p>Explore the latest exquisite offerings and creative menus</p>
+            </div>
+            <div class="box_4">
+                <div> <img style="width:200px" src="https://www.kindmeal.my/images/intro_friends.png"></div>
+                <h3>Meet food lovers</h3>
+                <p>Make new, compassionate friends and share great food tips</p>
+            </div>
+    
+
+        </div><br>
+
+        <h3>Any restaurant or cafe can join KindMeal, vegetarian or not, as long as the deals and menu featured are meat-free.
+            Enjoy a great meat-free dining experience. Easily save animal lives, health, environment and money now!</h3>
+        <button onclick="myFunc()">Join KindMeal Now</button>
+        
+
+
+    </div><br>
+    
+    
+    <div id="footer_img">
+        <h3>Featured On</h3>
+
+        <img src="https://www.kindmeal.my/images/media-feature2.png" alt="">
+        <img style="width: 100%;background-color:#ececec" src="https://www.kindmeal.my/images/banner_whykindmeal.png" alt="">
+    
+
+    </div>
+    
+    <div id="footer">
+
+        
+        <ul>
+        <h4 style="display: inline;color: #FFFFFF;">General</h4>
+        <li> <a href="#"> Home </a> </li>
+        <li> <a href="#"> Sign Up </a> </li>
+        <li> <a href="#"> Businesses/Restaurant </a> </li>
+        <li> <a href="#"> Advertising </a> </li>
+        <li> <a href="#"> About Kindmeal.my </a> </li>
+        </ul>
+
+
+        
+        <ul>
+            <h4 style="display: inline;color: #FFFFFF;">Features</h4>
+            <li> <a href="#"> Features </a> </li>
+            <li> <a href="#"> Sign Up </a> </li>
+            <li> <a href="#"> Businesses/Restaurant </a> </li>
+            <li> <a href="#"> Advertising </a> </li>
+            <li> <a href="#"> About Kindmeal.my </a> </li>
+            </ul>
+
+
+
+            
+        <ul>
+            <h4 style="display: inline;color: #FFFFFF;">Social Media</h4>
+            <li> <a href="#"> Features </a> </li>
+            <li> <a href="#"> Sign Up </a> </li>
+            <li> <a href="#"> Businesses/Restaurant </a> </li>
+            <li> <a href="#"> Advertising </a> </li>
+            <li> <a href="#"> About Kindmeal.my </a> </li>
+            </ul>
+
+
+
+            
+            
+        <ul>
+            <h4 style="display: inline;color: #FFFFFF;">Mobile</h4>
+            <li> <a href="#"> Features </a> </li>
+            <li> <a href="#"> Sign Up </a> </li>
+            <li> <a href="#"> Businesses/Restaurant </a> </li>
+            <li> <a href="#"> Advertising </a> </li>
+            <li> <a href="#"> About Kindmeal.my </a> </li>
+            </ul>
+
+
+            
+            
+        <ul>
+            <h4 style="display: inline;color: #FFFFFF;">Exciting Promos</h4>
+            <li> <a href="#"> Features </a> </li>
+            <li> <a href="#"> Sign Up </a> </li>
+            <li> <a href="#"> Businesses/Restaurant </a> </li>
+            <li> <a href="#"> Advertising </a> </li>
+            <li> <a href="#"> About Kindmeal.my </a> </li>
+            </ul>
+
+
+
+            
+            
+        <ul>
+            <h4 style="display: inline;color: #FFFFFF;">PetFinder.my</h4>
+            <li> <a href="#"> Features </a> </li>
+            <li> <a href="#"> Sign Up </a> </li>
+            <li> <a href="#"> Businesses/Restaurant </a> </li>
+            <li> <a href="#"> Advertising </a> </li>
+            <li> <a href="#"> About Kindmeal.my </a> </li>
+            </ul>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+    
+</body>
+</html>
+
+
+
+
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+        }    
+      
+    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+    
