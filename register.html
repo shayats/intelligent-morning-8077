@@ -4,34 +4,329 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Details</title>
+    <title>Register Details</title>
     
     <style>
-        #container{
-            text-align: center;
+        #reg_container{
+            /* text-align: center; */
             font-family: Arial, Helvetica, sans-serif;
-            border: 3px solid green;
+            border: 0px solid green;
             width: 60%;
+            font-size: 13px;
+            background-color: #fcfcfc;
+        }
+
+        .Reg_button button{
+            border: none;
+            background-color: #f53838;
+            font-weight: bold;
+            padding: 10px 30px;
+            border-radius: 10px;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+
+        
+        #footer_img{
+            
+            text-align: center;
+            border: 0px solid orangered;
+            background-color: #e0e0e0;
+        }
+
+        #footer{
+            background-color: #2bb673;
+            border: 0px solid gold;
+            height: 400px;
+            display: flex;
+            padding: 20px 40px;
+        }
+
+        #footer ul{
+        list-style: none; 
+        
+        
+        }
+
+        #footer a{
+            color: #FFFFFF;
+            text-decoration:none;
+            font-size: small;
+        }
+
+        #join_button:hover{
+            background-color: #bb0707;
         }
     </style>
 </head>
 <body>
-    <div id="container">
+    <div id="reg_container">
         <span style="font-family: Arial, Helvetica, sans-serif ;font-size: 20px;">Food Lover? Sign Up Now or <a style=" color:#2184ff;text-decoration: none;" href="https://www.facebook.com/v2.9/dialog/oauth?client_id=292733157519852&redirect_uri=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook&state=45ec93a5ac41c98c9ea3abe7105a0b5c&display=popup&scope=email,user_birthday,user_location">Login with Facebook</a></span>
         <p>Discover tasty meat-free meals and dine instantly — no coupon payment, booking or printing is required.</p>
         <p>KindMeal is a fun, exciting and cool new way for you to show your compassion towards animals. We collaborate with kind restaurants and cafes across the nation to bring you delicious meat-free foods that will not only help save precious animal lives, but improve your health and save your money at the same time!</p>
         
         
-        <form class="form-inline" action="">
+        <!-- <form class="form-inline" action=""> -->
+        <form action="">
             <label for="email">Your Name:</label>
+            <input type="text" id="name" placeholder="First name" name="email">
+            <input type="text" id="name" placeholder="Last name" name="email"><br><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter email" name="email">
+            <input type="email" id="email" placeholder="Enter email" name="email"><br><br>
+            <label for="email">Re-enter mail:</label>
+            <input type="email" id="email" placeholder="Enter email" name="email"><br><br>
             <label for="pwd">Password:</label>
-            <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+            <input type="password" id="pwd" placeholder="Enter password" name="pswd"><br><br>
+            <label for="email">User Name:</label>
+            <input type="text" id="name"  name="email"><br><br>
+            <label for="DOB">Birth Date:</label>
+            <input type="date" id="DOB" name="email"><br><br>
+            <label for="DOB">Country:</label>
+            <select>
+                <option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+            <option value="Anguilla">Anguilla</option>
+            <option value="Antartica">Antarctica</option>
+            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Aruba">Aruba</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Bahrain">Bahrain</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Belarus">Belarus</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Belize">Belize</option>
+            <option value="Benin">Benin</option>
+            <option value="Bermuda">Bermuda</option>
+            
+        </select><br><br>
+
+
+        <label for="DOB">State:</label>
+            <select>
+                <option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+            <option value="Anguilla">Anguilla</option>
+            <option value="Antartica">Antarctica</option>
+            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Aruba">Aruba</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Bahrain">Bahrain</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Belarus">Belarus</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Belize">Belize</option>
+            <option value="Benin">Benin</option>
+            <option value="Bermuda">Bermuda</option>
+            
+        </select>
+
+        <label for="DOB">Gender:</label>
+        <input type="radio" id="name" name="male">
+        <label for="DOB">Male:</label>
+        <input type="radio" id="name"  name="female">
+        <label for="DOB">Female:</label><br>
+
+        <p><input id="terms" type="checkbox" onclick="agree()" name="terms" value="on" /> I agree to KindMeal.my Terms & Conditions</p><br><br>
+        <div class="Reg_button">
+            <button id="join_button">Join Now</button><br>
+        </div><br><br>
+        
+          
         </form>
 
     </div>
 
+
+
+
+
+
+
+    <div id="deals_1_footer">
+
+
+        <div id="footer_img">
+    
+            <img src="https://www.kindmeal.my/images/how_kindmeal_works.png" alt="">
+        
+        </div>
+
+
+        
+        <div id="footer">
+    
+            
+    
+            <ul>
+                <h4 style="display: inline;color: #FFFFFF;">General</h4>
+                <li> <a href="./home.html"> Home </a> </li>
+                <li> <a href="./signup.html"> Sign Up </a> </li>
+                <li> <a href="https://www.kindmeal.my/businesses.htm"> Businesses/Restaurant </a> </li>
+                <li> <a href="https://www.kindmeal.my/advertising.htm"> Advertising </a> </li>
+                <li> <a href="https://www.kindmeal.my/about.htm"> About Kindmeal.my </a> </li>
+                <li>  <a href="https://www.kindmeal.my/help.htm">Help & FAQ</a></li>
+                <li>  <a href="https://www.kindmeal.my/terms.htm">Terms & Conditions </a></li>
+                <li>  <a href="https://www.kindmeal.my/partners.htm">Inspiring Partners</a></li>
+                <li>  <a href="https://www.kindmeal.my/ambassadors.htm">Lifestyle Ambassadors</a></li>
+                <li>  <a href="https://www.kindmeal.my/careers.htm">Jobs & careers</a></li>
+                <li>  <a href="https://www.kindmeal.my/contact.htm">Contact Us</a></li>
+                </ul>
+        
+        
+                
+                <ul>
+                    <h4 style="display: inline;color: #FFFFFF;">Features</h4>
+                    <li> <a href="https://www.kindmeal.my/deals.htm"> Meat free deals</a> </li>
+                    <li> <a href="https://www.kindmeal.my/menu.htm"> Tasty Menus </a> </li>
+                    <li> <a href="https://www.kindmeal.my/moments.htm"> Kind Moments</a> </li>
+                    <li> <a href="https://www.kindmeal.my/recipes.htm"> Meatfree recipes </a> </li>
+                    <li> <a href="https://www.kindmeal.my/hotpicks.htm"> Member recommendation </a> </li>
+                    <li><a href="https://www.kindmeal.my/restaurants.htm">Featured Restaurants</a></li>
+                    <li><a href="https://www.kindmeal.my/vegetarian_directory.htm"> Vegetarians & Vegan Directory</a></li>
+                    <li><a href="https://www.kindmeal.my/foodmap.htm"> Food Map</a></li>
+                    <li><a href="https://www.kindmeal.my/superhero.htm"> Become a Superhero</a></li>
+                    <li><a href="https://www.kindmeal.my/articles/"> Vegan News & Vegetarian Articles</a></li>
+                    <li><a href="https://www.kindmeal.my/buzz.htm"> Latest comments</a></li>
+                    </ul>
+        
+        
+        
+                    
+                <ul>
+                    <h4 style="display: inline;color: #FFFFFF;">Social Media</h4>
+                    <li> <a href="https://www.kindmeal.my/widget.htm">KindMeal Widget</a> </li>
+                    <li> <a href="https://www.facebook.com/KindMeal.my"> Facebook</a> </li>
+                    <li> <a href="https://twitter.com/KindMeal"> Twitter </a> </li>
+                    <li> <a href="https://instagram.com/KindMeal.my"> Instagram</a> </li>
+                    </ul>
+        
+        
+        
+                    
+                    
+        
+                    
+                    
+                <ul>
+                    <h4 style="display: inline;color: #FFFFFF;">Exciting Promos</h4>
+                    <li> <a href="https://www.kindmeal.my/Gadhimai"> Gandhimai:Ending Mass Slaughter </a> </li>
+                    <li> <a href="https://www.kindmeal.my/Gadhimai"> Free Meals</a> </li>
+                    <li> <a href="https://www.kindmeal.my/Gadhimai"> Food Bloggers </a> </li>
+                    <li> <a href="https://www.kindmeal.my/Gadhimai"> Uber CHIRP </a> </li>
+                    <li> <a href="https://www.kindmeal.my/Gadhimai"> Jane Goodall Contest </a> </li>
+                    <li><a href="https://www.kindmeal.my/Gadhimai">Win DigiIphone-6</a></li>
+                    <li><a href="https://www.kindmeal.my/Gadhimai">Feed the Poor</a></li>
+                    <li><a href="https://www.kindmeal.my/Gadhimai"> Win Superhero Gifts</a></li>
+                    <li><a href="https://www.kindmeal.my/Gadhimai"> Win a ipad Mini 3</a></li>
+                    </ul>
+    
+                
+                
+    <ul>
+        <h4 style="display: inline;color: #FFFFFF;">PetFinder.my</h4>
+        <li> <a href="https://www.kindmeal.my/Gadhimai"> Adopt a pet </a> </li>
+        <li> <a href="https://www.kindmeal.my/Gadhimai"> Smartphone Apps </a> </li>
+        <li> <a href="https://www.kindmeal.my/Gadhimai"> Wagazine </a> </li>
+        <li> <a href="https://www.kindmeal.my/Gadhimai"> Discussion Forum </a> </li>
+        <li> <a href="https://www.kindmeal.my/Gadhimai"> Medical Fund </a> </li>
+        </ul>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+
     
 </body>
 </html>
+
+
+
+
+
+
+<script>
+
+function agree() {
+		if ($('#terms').prop('checked'))
+     //if ($('#terms').attr('checked'))	
+		{
+      $('.hidden').show();
+      //window.open('https://www.google.com', '_blank');
+		}
+			else 
+			{
+        $('.hidden').hide();
+			//return false;
+			}
+	}
+
+
+
+
+    let submit_btn = document.querySelector("button");
+    submit_btn.addEventListener("click", SUbmit_Func);
+
+    function SUbmit_Func(){
+        let input_tags=document.querySelectorAll("input");
+       
+        let Fname_details=input_tags[0].value;
+        let Lname_details=input_tags[1].value;
+        let email_details=input_tags[2].value;
+        let Re_email_details=input_tags[3].value;
+        let Uname_details=input_tags[4].value;
+        let password=input_tags[5].value;
+        let DOB_details=input_tags[6].value;
+        let country_details=input_tags[7].value;
+        let state_details=input_tags[8].value;
+        let gender_details=input_tags[9].value;
+
+        // console.log(email_details,password,phone_number);
+
+
+        let obj={
+            Fname_details,
+            Lname_details,
+            email_details,
+            Re_email_details,
+            Uname_details,
+            password,
+            DOB_details,
+            country_details,
+            state_details,
+            gender_details,
+
+        };
+        // console.log(obj);
+
+        localStorage.setItem("signup_details",JSON.stringify(obj));
+        alert("Successfully Signup");
+        window.location.href="login.html"
+      
+    }
+</script>
